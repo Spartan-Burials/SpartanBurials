@@ -1,0 +1,343 @@
+
+@font-face {
+  font-family: "Impact";
+  src: url("fonts/impact.ttf") format("truetype");
+
+@font-face {
+font-family: 'Lefty Dave';
+src: url('fonts/leftydave.ttf') format('truetype');
+}
+}
+
+.begin-button {
+  position: relative;
+  top: -250px;
+  text-align: center;
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #4dff6b41;
+    background-color: #111;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 10px #4dff6b41;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+  }
+
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    color: white;
+    width: 200%;
+    height: 200%;
+    background-color: #4dff6b41;
+    opacity: 0.5;
+    transform: rotate(45deg);
+    transition: opacity 0.3s;
+  }
+
+  .neon-button:hover {
+    box-shadow: 0 0 20px #00ff00;
+  }
+
+  .neon-button:hover::after {
+    opacity: 1;
+  }
+
+  body {
+    background-image: radial-gradient(black, rgb(29, 29, 29));
+    color: white;
+    font-style: ;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  body h1, h2 {
+    font-family: Impact, sans-serif;
+    color: #4dff6b41;
+    text-align: center;
+    font-size: 42px;
+  }
+
+  body h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    }
+
+
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #1b1b1b;
+    overflow: hidden;
+    flex-direction: row;
+
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    position: absolute;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    padding-right: 1px;
+  }
+
+  .logo a {
+    position: fixed;
+    color: white;
+    font-size: 30px;
+    
+  }
+
+  .logo-text {
+    position: absolute;
+    padding-left: 5px;
+    top: 3px;
+    font-size: 30px;
+    font-family: Impact, sans-serif;
+
+  }
+
+  .navigation .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 20px;
+  }
+
+  .navigation .menu a {
+    margin-left: 20px;
+    justify-content: baseline;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    font-family: Impact, sans-serif;
+    /*font-family: 'Lefty Dave', sans-serif;*/
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .navigation .menu a:hover {
+    margin-left: 20px;
+    justify-content: baseline;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Impact, sans-serif;
+
+    /*font-family: 'Lefty Dave', sans-serif;*/
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+  }
+
+  .animated-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, #1b1b1b, #92fe9d);
+    animation: animateBorder 3s linear infinite;
+  }
+
+  @keyframes animateBorder {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  .content {
+    background-image: url("explosion\ x3\ wide.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0px;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .content h1 {
+
+  
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 0px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .image-grid img {
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0);
+  animation: scaleIn 1s ease-in-out forwards;
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .section1 {
+    text-align: center;
+    padding-top: 36px;
+    font-size: 40px;
+  }
+
+  .legacy {
+    padding-top: 36px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .honor {
+    padding-top: 36px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+  }
+
+ 
+
+  h3 {
+    text-align: center;
+  }
+
+  .vid {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu {
+    text-align: center;
+    margin-top: 5px;
+    padding: 20px;
+  }
+
+  .newsletterform {
+    background-image: url("map.jpg.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    background-color: #1b1b1b;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: opx;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    left: 0px;
+  }
+
+  .email-input {
+    border: none;
+    height: 26px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background-color: ;
+    
+  }
+
+  .form {
+    position: relative;
+    left: 0px;
+    border: none;
+    height: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(123, 0, 0, 0.587);
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  
+  .footer {
+    text-align: center;
+    text-decoration: none;
+    left: -20px;
+    background-color: #1b1b1b;
+    height: 50px;
+    color: black;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .footer a {
+    color: #000;
+    font-family: 'Lefty Dave', sans-serif;
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: bolder;
+  }
+
+  @keyframes neonGlows {
+   
+    
+    50% {
+      text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #4eff2f, 0 0 70px #4eff2f, 0 0 50px #4eff2f, 0 0 80px #4eff2f, 0 0 100px ;
+    }
+  }
+  
+  .enlist {
+    color: #009730;
+    font-size: 36px;
+    font-family: Impact, sans-serif;
+    padding-top: 60px;
+    padding-bottom: 34px;
+    animation: neonGlows 5s ease-in-out infinite;
+    text-align: center;
+  }
+
